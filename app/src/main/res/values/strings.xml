@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">RepairOrderF25</string>
+    <string name="app_name">"RepairOrderF25"</string>
+    <string name="app_name_header">"Repair Order"ß</string>
+    <string name="name_label">Name!@@@@@</string>
+    <string name="inspection">Inspection</string>
+    <string name="name_sample">Jhon Padilla</string>
+    <string name="dollarempty">$0.00</string>
 </resources>
