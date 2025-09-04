@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -37,7 +38,7 @@
         android:layout_height="wrap_content"
         android:text="Labor"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextText5"
-        app:layout_constraintStart_toStartOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="@+id/orderType" />
 
     <EditText
         android:id="@+id/editTextText7"
@@ -116,7 +117,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView13" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
@@ -143,7 +144,7 @@
         android:layout_height="wrap_content"
         android:text="Parts"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextText9"
-        app:layout_constraintStart_toStartOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="@+id/orderType" />
 
     <TextView
         android:id="@+id/textView14"
@@ -151,7 +152,7 @@
         android:layout_height="wrap_content"
         android:text="Paint"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextText7"
-        app:layout_constraintStart_toStartOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="@+id/orderType" />
 
     <TextView
         android:id="@+id/textView7"
@@ -159,7 +160,7 @@
         android:layout_height="wrap_content"
         android:text="Technitian"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextText2"
-        app:layout_constraintStart_toStartOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="@+id/orderType" />
 
     <TextView
         android:id="@+id/textView5"
@@ -167,7 +168,7 @@
         android:layout_height="wrap_content"
         android:text="Technitian"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextText2"
-        app:layout_constraintStart_toStartOf="@+id/textView3" />
+        tools:layout_editor_absoluteX="58dp" />
 
     <EditText
         android:id="@+id/editTextText2"
@@ -187,10 +188,10 @@
         android:layout_height="wrap_content"
         android:text="@string/inspection"
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextText6"
-        app:layout_constraintStart_toStartOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="@+id/orderType" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/headerText"
         android:layout_width="205dp"
         android:layout_height="35dp"
         android:layout_marginTop="36dp"
@@ -214,7 +215,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/headerText" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -225,12 +226,11 @@
         android:editable="true"
         android:ems="10"
         android:inputType="number|numberDecimal"
-        android:text=
-        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/orderType"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/orderType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="58dp"
